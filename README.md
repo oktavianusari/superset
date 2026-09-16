@@ -1,5 +1,9 @@
+<details>
+
+<summary>Windows 11 Light Theme</summary>
+
 ### Windows 11 Light Theme
-```env
+```
 {
   "token": {
     "brandAppName": "LKPP - Apache Superset",
@@ -74,4 +78,41 @@
   },
   "algorithm": "default"
 }
+```
+
+</details>
+
+
+
+
+### TEXT
+```
+```
+
+### TEXT
+```
+```
+
+### TEXT
+```
+```
+
+### TEXT
+```
+```
+
+### TEXT
+```
+```
+
+### TEXT
+```
+```
+
+### TEXT
+```
+```
+
+### TEXT
+```
 ```
