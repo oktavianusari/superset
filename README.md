@@ -1,4 +1,4 @@
-# Data Analytics Apache Superset Fundamentals Training - Clipboard 
+# Data Analytics Apache Superset Fundamentals - Clipboard 
 
 ## Themes
 
@@ -676,7 +676,7 @@
 
 </details>
 
-# Custom CSS
+## Custom CSS
 
 <details>
 <summary>1. Customize The Big Number Chart</summary>
