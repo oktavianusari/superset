@@ -1,7 +1,7 @@
 # Themes
 
 <details>
-<summary>Windows 11 Light Theme</summary>
+<summary>1. Windows 11 Light Theme</summary>
   
 ### JSON
   
@@ -85,7 +85,7 @@
 </details>
 
 <details>
-<summary>Windows 11 Dark Theme</summary>
+<summary>2. Windows 11 Dark Theme</summary>
   
 ### JSON
 
@@ -170,7 +170,7 @@
 
 
 <details>
-<summary>Material Design 3 Theme</summary>
+<summary>3. Material Design 3 Theme</summary>
   
 ### JSON
 
@@ -252,7 +252,7 @@
 </details>
 
 <details>
-<summary>IntelliJ Island Light</summary>
+<summary>4. IntelliJ Island Light</summary>
   
 ### JSON
 
@@ -321,7 +321,7 @@
 </details>
 
 <details>
-<summary>IntelliJ Island Dark</summary>
+<summary>5. IntelliJ Island Dark</summary>
   
 ### JSON
 
@@ -390,7 +390,7 @@
 </details>
 
 <details>
-<summary>IntelliJ Darcula</summary>
+<summary>6. IntelliJ Darcula</summary>
   
 ### JSON
 
@@ -459,7 +459,7 @@
 </details>
 
 <details>
-<summary>Apple iOS 17</summary>
+<summary>7. Apple iOS 17</summary>
   
 ### JSON
 
@@ -541,7 +541,7 @@
 </details>
 
 <details>
-<summary>Preset Default Light Theme</summary>
+<summary>8. Preset Default Light Theme</summary>
   
 ### JSON
 
@@ -613,7 +613,7 @@
 </details>
 
 <details>
-<summary>Preset Default Dark Theme</summary>
+<summary>9. Preset Default Dark Theme</summary>
   
 ### JSON
 
@@ -677,34 +677,85 @@
 # Custom CSS
 
 <details>
-<summary>Text</summary>
+<summary>1. Customize The Big Number Chart</summary>
   
-### JSON
+### CSS
 
 ```
+/* ==========================================================================
+   Chart 112: Background + Kontras Teks
+   ========================================================================== */
 
+/* 1. Pasang background pada .chart-slice dengan URL valid (960px) & properti terpisah */
+.dashboard-chart-id-112 .chart-slice {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url('https://images.unsplash.com/photo-1630165356623-266076eaceb6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+/* 2. Pastikan SELURUH kontainer di dalamnya 100% transparan */
+.dashboard-chart-id-112 .slice-header,
+.dashboard-chart-id-112 .dashboard-chart,
+.dashboard-chart-id-112 .chart-container,
+.dashboard-chart-id-112 .slice_container,
+.dashboard-chart-id-112 .slice_container * {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+/* 3. Override inline style teks angka (93,497) */
+.dashboard-chart-id-112 .header-line {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* 4. Buat seluruh teks dan ikon lainnya berwarna putih */
+.dashboard-chart-id-112 .metric-name,
+.dashboard-chart-id-112 .subheader-line,
+.dashboard-chart-id-112 .slice-header a,
+.dashboard-chart-id-112 .editable-title,
+.dashboard-chart-id-112 .header-controls .anticon {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8) !important;
+}
 ```
 
 </details>
 
 <details>
-<summary>Text</summary>
+<summary>2. All White Dashbiard</summary>
   
-### JSON
+### CSS
 
 ```
+.dashboard-component-chart-holder {
+  border-radius: 16px !important;
+}
 
+ /* changing the main dash background */
+  .dashboard-content{
+      background-color: #FFFFFF;
+  }
 ```
 
 </details>
 
 <details>
-<summary>Text</summary>
+<summary>3. Google Font Fonts Styling</summary>
   
-### JSON
+### CSS
 
 ```
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+  /* changing the font as globally as possible */
+  #main-menu + div *{
+      font-family: 'Roboto', sans-serif !important;
+  }
 ```
 
 </details>
