@@ -1,5 +1,34 @@
 # Data Analytics Apache Superset Fundamentals - Clipboard 
 
+# Hari ke-1
+<details>
+<summary>1. Menampilkan seluruh data</summary>
+  
+### SQL
+  
+```
+SELECT *
+FROM public."COVID Vaccines";
+```
+
+</details>
+
+<details>
+<summary>2. membatasi jumlah data</summary>
+  
+### SQL
+  
+```
+SELECT *
+FROM public."COVID Vaccines"
+LIMIT 10;
+
+```
+
+</details>
+
+# Hari ke-2
+# Hari ke-4
 ## Themes
 
 <details>
