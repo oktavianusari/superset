@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Training Apache Superset LKPP 14-17 September 2026</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+        }
+
+        /* =========================
+           HEADER
+           ========================= */
+
+        .header {
+            width: 100%;
+            background: #1f2937;
+            color: white;
+            padding: 18px 24px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        /* =========================
+           TAB NAVIGATION
+           ========================= */
+
+        .tabs {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            background: white;
+            border-bottom: 1px solid #d1d5db;
+            padding: 8px 12px 0;
+        }
+
+        .tab {
+            border: none;
+            background: transparent;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #4b5563;
+            cursor: pointer;
+            border-radius: 6px 6px 0 0;
+            transition: all 0.2s ease;
+        }
+
+        .tab:hover {
+            background: #f3f4f6;
+            color: #111827;
+        }
+
+        .tab.active {
+            background: #2563eb;
+            color: white;
+        }
+
+        /* =========================
+           DASHBOARD
+           ========================= */
+
+        .dashboard-container {
+            width: 100%;
+            height: calc(100vh - 117px);
+            background: white;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* =========================
+           RESPONSIVE
+           ========================= */
+
+        @media (max-width: 768px) {
+
+            .header h1 {
+                font-size: 18px;
+            }
+
+            .tabs {
+                justify-content: flex-start;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            .tab {
+                padding: 10px 14px;
+                font-size: 13px;
+            }
+
+            .dashboard-container {
+                height: calc(100vh - 105px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+         ========================= -->
+
+    <header class="header">
+        <h1>Training Apache Superset LKPP 14-17 September 2026</h1>
+    </header>
+
+
+    <!-- =========================
+         TABS
+         ========================= -->
+
+    <nav class="tabs">
+
+        <button
+            class="tab active"
+            onclick="changeDashboard(this, 'https://98c05a2a.ap1a.app.preset.io/superset/dashboard/5/?standalone=2&show_filters=1&native_filters_key=GHcfGHUKGerxI9qHX6Ynlg')">
+            Sales Dashboard
+        </button>
+
+        <button
+            class="tab"
+            onclick="changeDashboard(this, 'https://98c05a2a.ap1a.app.preset.io/superset/dashboard/7/?standalone=2&show_filters=1&native_filters_key=6H7Kac5XClw_ntLmdiewjw')">
+            COVID Vaccine Dashboard
+        </button>
+
+        <button
+            class="tab"
+            onclick="changeDashboard(this, 'https://98c05a2a.ap1a.app.preset.io/superset/dashboard/3/?standalone=2&show_filters=1&native_filters_key=VJEAyKFJLI_CFsGDZ0K7CQ')">
+            Video Game Sales
+        </button>
+
+        <button
+            class="tab"
+            onclick="changeDashboard(this, 'https://98c05a2a.ap1a.app.preset.io/superset/dashboard/2/?standalone=2&show_filters=0')">
+            World Bank Data
+        </button>
+
+    </nav>
+
+
+    <!-- =========================
+         DASHBOARD IFRAME
+         ========================= -->
+
+    <main class="dashboard-container">
+
+        <iframe
+            id="dashboardFrame"
+            src="https://98c05a2a.ap1a.app.preset.io/superset/dashboard/5/?standalone=2&show_filters=1&native_filters_key=GHcfGHUKGerxI9qHX6Ynlg"
+            title="Apache Superset Dashboard"
+            allowfullscreen>
+        </iframe>
+
+    </main>
+
+
+    <!-- =========================
+         JAVASCRIPT
+         ========================= -->
+
+    <script>
+
+        function changeDashboard(tab, url) {
+
+            // Ganti URL iframe
+            document.getElementById("dashboardFrame").src = url;
+
+            // Hapus status active dari semua tab
+            const tabs = document.querySelectorAll(".tab");
+
+            tabs.forEach(function(item) {
+                item.classList.remove("active");
+            });
+
+            // Aktifkan tab yang dipilih
+            tab.classList.add("active");
+        }
+
+    </script>
+
+</body>
+</html>
