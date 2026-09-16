@@ -1,4 +1,6 @@
-# Themes
+# Data Analytics Apache Superset Fundamentals Training - Clipboard 
+
+## Themes
 
 <details>
 <summary>1. Windows 11 Light Theme</summary>
