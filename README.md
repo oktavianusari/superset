@@ -1,6 +1,7 @@
 <details>
 <summary>Windows 11 Light Theme</summary>
 ### JSON
+  
 ```
 {
   "token": {
@@ -77,6 +78,7 @@
   "algorithm": "default"
 }
 ```
+
 </details>
 
 <details>
